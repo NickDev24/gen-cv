@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV RAPIDO — Generador de Curriculum Vitae Profesional</title>
+  <meta name="description" content="Creá tu CV profesional en menos de 3 minutos. Gratis, sin registro. Ideal para el mercado laboral argentino." />
+  <meta name="keywords" content="cv, curriculum vitae, argentina, generador cv, empleo, trabajo" />
+  <meta property="og:title" content="CV RAPIDO — Generador de CV Profesional" />
+  <meta property="og:description" content="Creá tu curriculum vitae profesional en menos de 3 minutos. Gratis y sin registro." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/css/main.css" />
+  <link rel="stylesheet" href="/src/css/templates/base.css" />
+  <link rel="stylesheet" href="/src/css/templates/themes.css" />
+  <link rel="stylesheet" href="/src/css/templates.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">CV <strong>RAPIDO</strong></span>
+      </a>
+      <p class="header-tagline">Tu CV profesional en minutos</p>
+    </div>
+  </header>
+
+  <!-- PROGRESS BAR -->
+  <div class="progress-bar-container">
+    <div class="container">
+      <div class="steps-indicator">
+        <div class="step-dot active" data-step="0"><span>1</span><small>Categoría</small></div>
+        <div class="step-line"></div>
+        <div class="step-dot" data-step="1"><span>2</span><small>Datos</small></div>
+        <div class="step-line"></div>
+        <div class="step-dot" data-step="2"><span>3</span><small>Plantilla</small></div>
+        <div class="step-line"></div>
+        <div class="step-dot" data-step="3"><span>4</span><small>Vista Previa</small></div>
+        <div class="step-line"></div>
+        <div class="step-dot" data-step="4"><span>5</span><small>Descargar</small></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Step 0: Landing / Category -->
+      <section id="step-0" class="step active">
+        <div class="step-header">
+          <h1>Creá tu CV Profesional</h1>
+          <p class="step-subtitle">Elegí tu categoría laboral para comenzar</p>
+        </div>
+        <div id="categories-grid" class="categories-grid"></div>
+      </section>
+
+      <!-- Step 1: Form -->
+      <section id="step-1" class="step">
+        <div class="step-header">
+          <h2>Completá tus Datos</h2>
+          <p class="step-subtitle">Toda la información es opcional excepto nombre y apellido</p>
+        </div>
+        <form id="cv-form" class="cv-form" novalidate>
+          <!-- Rendered by JS -->
+        </form>
+        <div class="step-actions">
+          <button type="button" class="btn btn-secondary" id="btn-back-1">← Volver</button>
+          <button type="button" class="btn btn-primary" id="btn-next-1">Continuar →</button>
+        </div>
+      </section>
+
+      <!-- Step 2: Template -->
+      <section id="step-2" class="step">
+        <div class="step-header">
+          <h2>Elegí tu Plantilla</h2>
+          <p class="step-subtitle">Seleccioná el diseño que más te guste</p>
+        </div>
+        <div id="templates-grid" class="templates-grid"></div>
+        <div class="step-actions">
+          <button type="button" class="btn btn-secondary" id="btn-back-2">← Volver</button>
+          <button type="button" class="btn btn-primary" id="btn-next-2">Ver Preview →</button>
+        </div>
+      </section>
+
+      <!-- Step 3: Preview -->
+      <section id="step-3" class="step">
+        <div class="step-header">
+          <h2>Vista Previa de tu CV</h2>
+          <p class="step-subtitle">Revisá que todo esté correcto antes de descargar</p>
+        </div>
+        <div id="cv-preview" class="cv-preview"></div>
+        <div class="step-actions">
+          <button type="button" class="btn btn-secondary" id="btn-back-3">← Volver</button>
+          <button type="button" class="btn btn-primary btn-large" id="btn-download">📄 Descargar PDF</button>
+        </div>
+      </section>
+
+      <!-- Step 4: Download -->
+      <section id="step-4" class="step">
+        <div class="step-header">
+          <div class="success-icon">✅</div>
+          <h2>¡Tu CV está listo!</h2>
+          <p class="step-subtitle">La descarga comenzará automáticamente</p>
+        </div>
+        <div class="download-actions">
+          <button type="button" class="btn btn-primary btn-large" id="btn-download-again">📄 Descargar de Nuevo</button>
+          <button type="button" class="btn btn-secondary" id="btn-new-cv">Crear otro CV</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 CV RAPIDO — FACUNDO M CERCUETTI. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Ad slot (hidden, ready for Monetag) -->
+  <div id="ad-slot" style="display:none;"></div>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay" class="loading-overlay hidden">
+    <div class="spinner"></div>
+    <p>Procesando...</p>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

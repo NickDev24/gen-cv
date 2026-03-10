@@ -1,0 +1,10 @@
+# CV RAPIDO
+
+Este software es propiedad de FACUNDO M CERCUETTI.
+Desarrollado para el mercado laboral de Argentina.
+
+## Atribuciones
+- PDF generation via PDFKit
+- Image hosting via Cloudinary
+- Database via MongoDB Atlas
+- Hosting via Vercel

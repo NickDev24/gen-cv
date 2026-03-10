@@ -1,0 +1,32 @@
+{
+  "name": "cv-rapido",
+  "version": "1.0.0",
+  "description": "Generador profesional de Curriculum Vitae para Argentina",
+  "main": "api/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node api/index.js\"",
+    "dev:client": "vite",
+    "dev:server": "node api/index.js",
+    "build": "vite build",
+    "start": "node api/index.js"
+  },
+  "keywords": ["cv", "curriculum", "argentina", "generador"],
+  "author": "FACUNDO M CERCUETTI",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "cloudinary": "^1.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "pdfkit": "^0.16.0",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  }
+}
